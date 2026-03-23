@@ -36,17 +36,38 @@
 // }
 
 
+// import java.util.*;
+// public class Main{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         System.out.print("ENTER YOUR FIRST NAME:");
+//         String firstName=sc.nextLine();
+//         System.out.print("ENTER YOUR LAST NAME:");
+//         String lastName=sc.nextLine();
+//         String fullName=firstName+lastName;
+//         for(int i=0;i<fullName.length();i++){
+//             System.out.println(fullName.charAt(i));
+//         }
+//     }
+// }
+
+
+//FUNCTION NUMBER 4 COMPARISION 
+
 import java.util.*;
 public class Main{
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
-        System.out.print("ENTER YOUR FIRST NAME:");
-        String firstName=sc.nextLine();
-        System.out.print("ENTER YOUR LAST NAME:");
-        String lastName=sc.nextLine();
-        String fullName=firstName+lastName;
-        for(int i=0;i<fullName.length();i++){
-            System.out.println(fullName.charAt(i));
+        System.out.print("ENTER YOUR I LETTER:");
+        String firstLetter=sc.nextLine();
+        System.out.print("ENTER THE 2nd LETTER:");
+        String secondLetter=sc.nextLine();
+        if(firstLetter.compareTo(secondLetter)==0){
+            System.out.print(firstLetter.compareTo(secondLetter)+" "+"BOTH ARE EQUAL");
+
+        }else{
+            System.out.print(firstLetter.compareTo(secondLetter)+" "+"NOT ARE EQUAL");
         }
+
     }
 }
