@@ -22,15 +22,31 @@
 
 //THEN WE WILL TALK ABOUT THE LENGHT OF STRING
 
+// import java.util.*;
+// public class Main{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         System.out.print("ENTER YOUR FIRST NAME:");
+//         String firstName=sc.nextLine();
+//         System.out.print("ENTER YOU LAST NAME:");
+//         String lastName=sc.nextLine();
+//         String fullName=firstName+" "+lastName;
+//         System.out.print("Name="+fullName.length()+" "+"\n"+fullName);//THIS THE SYNTEX OF FINDING THE LENGHT 
+//     }
+// }
+
+
 import java.util.*;
 public class Main{
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
         System.out.print("ENTER YOUR FIRST NAME:");
         String firstName=sc.nextLine();
-        System.out.print("ENTER YOU LAST NAME:");
+        System.out.print("ENTER YOUR LAST NAME:");
         String lastName=sc.nextLine();
-        String fullName=firstName+" "+lastName;
-        System.out.print("Name="+fullName.length()+" "+"\n"+fullName);//THIS THE SYNTEX OF FINDING THE LENGHT 
+        String fullName=firstName+lastName;
+        for(int i=0;i<fullName.length();i++){
+            System.out.println(fullName.charAt(i));
+        }
     }
 }
