@@ -1,0 +1,36 @@
+// import java.util.*;
+// public class Main{
+//     public static void main(String[] args){
+    //     Scanner sc=new Scanner(System.in);
+      
+       
+    //  String name=sc.nextLine();//DECLARATION OF THE STRING
+    //  System.out.println(name);
+    
+    //STRING CONCATENATION MEANS ADDITION IN ANOTHER JUST LIKE MERGE 
+
+//     Scanner sc=new Scanner (System.in);
+//     System.out.print("ENTER THE FIRSTNAME:");
+//     String firstName=sc.nextLine();
+//     System.out.print("ENTER YOUR LAST NAME:");
+//     String lastName=sc.nextLine();
+//     String fullName=firstName+" "+lastName;//AT THIS PLACE WE USE THE CONCATENATION IN NEW VALIABLE WE STORE THE PREVIOUS 2 VARIABLES BY ADDING EACH OTHER
+//     System.out.println("YOUR FULL NAME="+fullName);
+        
+//     }
+// }
+
+//THEN WE WILL TALK ABOUT THE LENGHT OF STRING
+
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("ENTER YOUR FIRST NAME:");
+        String firstName=sc.nextLine();
+        System.out.print("ENTER YOU LAST NAME:");
+        String lastName=sc.nextLine();
+        String fullName=firstName+" "+lastName;
+        System.out.print("Name="+fullName.length()+" "+"\n"+fullName);//THIS THE SYNTEX OF FINDING THE LENGHT 
+    }
+}
