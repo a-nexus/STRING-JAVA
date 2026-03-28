@@ -50,12 +50,25 @@
 
 //NEXT APPEND FUNCTION IN WHICH WE CAN ADD THING IN LAST OF THE STRINGBUILDER
 
+// import java.util.*;
+// public class StringBuilders{
+//     public static void main(String[] args){
+//            Scanner sc=new Scanner(System.in);
+//            StringBuilder sb=new StringBuilder(sc.nextLine());
+//            sb.append(sc.nextLine());
+//         System.out.println(sb);
+//         //THE LENGHT FUNCTION ALSO WORK IN THE STRING BUILDER FUNCTION
+//         System.out.print("LENGHT="+sb.length()); //SO THIS IS THE EXAMPLE OF THE LENGTH FUNCTION          
+//     }
+// }
+
 import java.util.*;
 public class StringBuilders{
     public static void main(String[] args){
-           Scanner sc=new Scanner(System.in);
-           StringBuilder sb=new StringBuilder(sc.nextLine());
-           sb.append(sc.nextLine());
-        System.out.print(sb);          
+     Scanner sc=new Scanner(System.in);
+     System.out.print("ENTER THE SENTENCE OR WORD EHICH YOU WANT TO REVERSE:");
+     StringBuilder sb=new StringBuilder(sc.nextLine());
+    
+        System.out.println(sb.reverse());
+     } 
     }
-}
