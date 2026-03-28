@@ -54,20 +54,40 @@
 
 //FUNCTION NUMBER 4 COMPARISION 
 
+// import java.util.*;
+// public class Main{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         System.out.print("ENTER YOUR I LETTER:");
+//         String firstLetter=sc.nextLine();
+//         System.out.print("ENTER THE 2nd LETTER:");
+//         String secondLetter=sc.nextLine();
+//         if(firstLetter.compareTo(secondLetter)==0){
+//             System.out.print(firstLetter.compareTo(secondLetter)+" "+"BOTH ARE EQUAL");
+
+//         }else{
+//             System.out.print(firstLetter.compareTo(secondLetter)+" "+"NOT ARE EQUAL");
+//         }
+
+//     }
+// }
+
+// TAKE AN ARRAY OF STRINGS INPUT FROM THE USER & FIND THE CUMULATIVE (COMBINED) 
+// LENGTH OF ALL THOSE STRINGS.
+
 import java.util.*;
 public class Main{
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
-        System.out.print("ENTER YOUR I LETTER:");
-        String firstLetter=sc.nextLine();
-        System.out.print("ENTER THE 2nd LETTER:");
-        String secondLetter=sc.nextLine();
-        if(firstLetter.compareTo(secondLetter)==0){
-            System.out.print(firstLetter.compareTo(secondLetter)+" "+"BOTH ARE EQUAL");
-
-        }else{
-            System.out.print(firstLetter.compareTo(secondLetter)+" "+"NOT ARE EQUAL");
+        System.out.print("ENTER THE SIZE OF THE ARRAY:");
+        int size=sc.nextInt();
+        sc.nextLine();
+        String[] array=new String[size];//THIS IS CALLED ARRAYS OF THE STRING
+        int stringLength=0;
+        for(int i=0;i<size;i++){
+            array[i]=sc.nextLine();
+            stringLength +=array[i].length();
         }
-
+        System.out.println(stringLength);
     }
 }

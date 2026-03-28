@@ -75,22 +75,22 @@
 
 //NEW QUESTION I HAVE TO REVERSE THE WORD WITHOUT USING REVERSE FUNCTION
 
-import java.util.*;
-public class StringBuilders{
-    public static void main(String[] args){
-        Scanner sc=new Scanner(System.in);
-        System.out.print("ENTER THE SENTENCE:");
-        StringBuilder sb=new StringBuilder(sc.nextLine());
-        for(int i=0;i<sb.length()/2;i++){
-            int first=i;
-            int last=sb.length()-1-i;
-            char firstAlpha=sb.charAt(last);
-            char lastAlpha=sb.charAt(first);
-            sb.setCharAt(first,firstAlpha);
-            sb.setCharAt(last,lastAlpha);
+// import java.util.*;
+// public class StringBuilders{
+//     public static void main(String[] args){
+//         Scanner sc=new Scanner(System.in);
+//         System.out.print("ENTER THE SENTENCE:");
+//         StringBuilder sb=new StringBuilder(sc.nextLine());
+//         for(int i=0;i<sb.length()/2;i++){
+//             int first=i;
+//             int last=sb.length()-1-i;
+//             char firstAlpha=sb.charAt(last);
+//             char lastAlpha=sb.charAt(first);
+//             sb.setCharAt(first,firstAlpha);
+//             sb.setCharAt(last,lastAlpha);
 
-        }
-        System.out.print(sb);
+//         }
+//         System.out.print(sb);
 
-    }
-}
+//     }
+// }
